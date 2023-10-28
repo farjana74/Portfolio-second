@@ -1,0 +1,34 @@
+.about-bg{
+    height: 100% !important;
+    width: 100%;
+}
+.about-header{
+    font-size: 30px;
+    color:#333333;
+    font-weight: bold;
+}
+.about-title{
+    font-size: 14px;
+    color:#333333;
+    font-weight: bold;
+}
+.about-description{
+    font-size: 14px;
+    color:#333333;
+    
+}
+.about-button{
+    color:#ffff;
+    font-size: 14px;
+    background-color: #207FDD;
+    padding: 12px 30px;
+    border-radius: 28px;
+    border:0;
+    font-weight: bold;
+}
+.about-button:hover{
+    background-color: #ffff;
+    color:#207FDD;
+    border: 2px solid #207FDD;
+    transition: .5s ;
+}
