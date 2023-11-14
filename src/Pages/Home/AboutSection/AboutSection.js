@@ -8,7 +8,7 @@ const AboutSection = () => {
       <div class="row gy-5 justify-content-between  ">
         <div class="col-md-6 ">
           <div class="p-3  ">
-            <img className="about-bg  " src={aboutLogo} alt="" />
+            <img className="about-bg" src={aboutLogo} alt="" />
           </div>
         </div>
         <div class="col-md-6  pt-4 ">
@@ -35,11 +35,8 @@ const AboutSection = () => {
             <hr />
           </div>
           <div class=" ">
-            <h1 className="text-start about-header">VISION & MISSION
-</h1>
-            <p className="text-start about-title ">
-            Our goal and thoughts
-            </p>
+            <h1 className="text-start about-header">VISION & MISSION</h1>
+            <p className="text-start about-title ">Our goal and thoughts</p>
             <div>
               <p className="py-3 about-description ">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -50,7 +47,6 @@ const AboutSection = () => {
                 electronic typesetting,
               </p>
             </div>
-            
           </div>
         </div>
       </div>
