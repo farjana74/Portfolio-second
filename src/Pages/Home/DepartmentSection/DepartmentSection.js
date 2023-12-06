@@ -6,14 +6,13 @@ import { FaRegEye } from "react-icons/fa6";
 import { MdHearing } from "react-icons/md";
 
 const DepartmentSection = () => {
-    const [department , setDepartment] = useState("")
-    console.log(department)
+  const [department, setDepartment] = useState([]);
 
-   useEffect(()=>{
-    fetch  ('/data.json')
-    .then(res=>res.json())
-    .then(data=>setDepartment(data))
-   },[])
+  useEffect(() => {
+    fetch("/data.json")
+      .then((res) => res.json())
+      .then((data) => setDepartment(data));
+  }, []);
 
   return (
     <div className="container py-5">
@@ -23,14 +22,24 @@ const DepartmentSection = () => {
       <div className="row">
         <div className="col-md-4">
           <div className="row">
-            <div className="col-md-6">
-              <GiLiver />
-            </div>
+            
+              {
+                department.map(showDepartment=>{
+                    return(
+                        <>
+                        <div className="col-md-6">
+                        <h2>{showDepartment.name}</h2>
+                        </div>
+                        
+                        </>
+                    )
+
+                })
+              }
+        
           </div>
         </div>
-        <div className="col-md-4">
-          
-        </div>
+        <div className="col-md-4"></div>
         <div className="col-md-4">
           <h4>Heart disease</h4>
           <p>
