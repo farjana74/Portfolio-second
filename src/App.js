@@ -5,6 +5,7 @@ import BannerSection from "./Pages/Home/BannerSection/BannerSection";
 import AboutSection from "./Pages/Home/AboutSection/AboutSection";
 import ServiceList from "./Pages/Home/BannerSection/ServiceList/ServiceList";
 import DoctorSection from "./Pages/Home/DoctorSection/DoctorSection";
+import DepartmentSection from "./Pages/Home/DepartmentSection/DepartmentSection";
 
 function App() {
   return (
@@ -16,6 +17,9 @@ function App() {
       <br />
       <br />
       <DoctorSection />
+      <br />
+      <br />
+      <DepartmentSection/>
     </div>
   );
 }
