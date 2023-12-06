@@ -1,9 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { GiLiver } from "react-icons/gi";
-import { PiBrainLight } from "react-icons/pi";
-import { FaTeeth } from "react-icons/fa";
-import { FaRegEye } from "react-icons/fa6";
-import { MdHearing } from "react-icons/md";
 
 const DepartmentSection = () => {
   const [department, setDepartment] = useState([]);
@@ -14,6 +9,10 @@ const DepartmentSection = () => {
       .then((data) => setDepartment(data));
   }, []);
 
+  const handleClick = (data) => {
+    console.log(data.name);
+  };
+
   return (
     <div className="container py-5">
       <h2 className="text-center">DEPARTMENT</h2>
@@ -22,21 +21,16 @@ const DepartmentSection = () => {
       <div className="row">
         <div className="col-md-4">
           <div className="row">
-            
-              {
-                department.map(showDepartment=>{
-                    return(
-                        <>
-                        <div className="col-md-6">
-                        <h2>{showDepartment.name}</h2>
-                        </div>
-                        
-                        </>
-                    )
-
-                })
-              }
-        
+            {department.map((showDepartment) => {
+              return (
+                <>
+                  <div onClick={(e)=>handleClick(showDepartment)} className="col-md-6 border">
+                    <img className="w-100" src={showDepartment.image} alt="" />
+                    <h2>{showDepartment.name}</h2>
+                  </div>
+                </>
+              );
+            })}
           </div>
         </div>
         <div className="col-md-4"></div>
