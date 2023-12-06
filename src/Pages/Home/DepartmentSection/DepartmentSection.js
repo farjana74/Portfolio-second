@@ -1,10 +1,20 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { GiLiver } from "react-icons/gi";
 import { PiBrainLight } from "react-icons/pi";
 import { FaTeeth } from "react-icons/fa";
 import { FaRegEye } from "react-icons/fa6";
 import { MdHearing } from "react-icons/md";
+
 const DepartmentSection = () => {
+    const [department , setDepartment] = useState("")
+    console.log(department)
+
+   useEffect(()=>{
+    fetch  ('/data.json')
+    .then(res=>res.json())
+    .then(data=>setDepartment(data))
+   },[])
+
   return (
     <div className="container py-5">
       <h2 className="text-center">DEPARTMENT</h2>
@@ -12,11 +22,14 @@ const DepartmentSection = () => {
 
       <div className="row">
         <div className="col-md-4">
-
-            
+          <div className="row">
+            <div className="col-md-6">
+              <GiLiver />
+            </div>
+          </div>
         </div>
         <div className="col-md-4">
-          <FaRegEye />
+          
         </div>
         <div className="col-md-4">
           <h4>Heart disease</h4>
@@ -33,10 +46,10 @@ const DepartmentSection = () => {
 
           <div className="d-flex justify-content-between">
             <div>
-                <button>MAKE APPOINTMENT</button>
+              <button>MAKE APPOINTMENT</button>
             </div>
             <div>
-                <button>ALL DEPARTMENT</button>
+              <button>ALL DEPARTMENT</button>
             </div>
           </div>
         </div>

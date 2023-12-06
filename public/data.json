@@ -1,0 +1,42 @@
+
+[
+    {
+      "id": 1,
+      "name": "Liver",
+      "image": "https://i.ibb.co/ZYWR5jc/human-liver-icon-vector-15262578.jpg"
+    
+      
+      
+    },
+    {
+      "id": 2,
+      "name": "Ear",
+      "image": "https://i.ibb.co/yVnywS9/th-1.jpg"
+      
+    },
+    {
+      "id": 3,
+      "name": "Molar",
+      "image": "https://i.ibb.co/313H61Y/th-2.jpg"
+      
+    },
+    {
+      "id": 4,
+      "name": "Eye",
+      "image": "https://i.ibb.co/R24GGsy/th.jpg"
+      
+    },
+    {
+      "id": 5,
+      "name": "Brain",
+      "image": "https://i.ibb.co/FmKZ1F7/th-4.jpg"
+      
+    },
+    {
+      "id": 6,
+      "name": "Heart",
+      "image": "https://i.ibb.co/N72BxxN/th-3.jpg"
+      
+    }
+  ]
+  
