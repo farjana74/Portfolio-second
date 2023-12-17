@@ -2,6 +2,9 @@ import React, { useEffect, useState } from "react";
 
 const DepartmentSection = () => {
   const [department, setDepartment] = useState([]);
+  const [showPortalName, setShowPortalName] = useState("liver")
+  const  [portalImage, setPortalImage] = useState('https://i.ibb.co/ZYWR5jc/human-liver-icon-vector-15262578.jpg')
+  console.log(showPortalName)
 
   useEffect(() => {
     fetch("/data.json")
@@ -10,7 +13,8 @@ const DepartmentSection = () => {
   }, []);
 
   const handleClick = (data) => {
-    console.log(data.name);
+    setShowPortalName(data.name);
+    setPortalImage(data.image)
   };
 
   return (
@@ -24,7 +28,10 @@ const DepartmentSection = () => {
             {department.map((showDepartment) => {
               return (
                 <>
-                  <div onClick={(e)=>handleClick(showDepartment)} className="col-md-6 border">
+                  <div
+                    onClick={(e) => handleClick(showDepartment)}
+                    className="col-md-6 border"
+                  >
                     <img className="w-100" src={showDepartment.image} alt="" />
                     <h2>{showDepartment.name}</h2>
                   </div>
@@ -33,7 +40,11 @@ const DepartmentSection = () => {
             })}
           </div>
         </div>
-        <div className="col-md-4"></div>
+        <div className="col-md-4">
+        <h2>{showPortalName}</h2>
+        <img className="w-100" src={portalImage} alt="" />
+
+        </div>
         <div className="col-md-4">
           <h4>Heart disease</h4>
           <p>
