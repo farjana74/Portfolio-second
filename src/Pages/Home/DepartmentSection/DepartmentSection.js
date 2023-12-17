@@ -3,9 +3,10 @@ import "./DepartmentSection.css";
 
 const DepartmentSection = () => {
   const [department, setDepartment] = useState([]);
-  const [showPortalName, setShowPortalName] = useState("liver")
+  const [showPortalName, setShowPortalName] = useState("Liver")
   const  [portalImage, setPortalImage] = useState('https://i.ibb.co/stg2w9g/36-367347-organ-drawing-human-model-liver-png-removebg-preview.png')
-  console.log(showPortalName)
+  const[select, setSelected]= useState('select')
+ 
 
   useEffect(() => {
     fetch("/data.json")
@@ -16,24 +17,27 @@ const DepartmentSection = () => {
   const handleClick = (data) => {
     setShowPortalName(data.name);
     setPortalImage(data.image)
+    setSelected(select)
+    
   };
+  let borderStyle = showPortalName ==='Liver' ? "1px solid black":"none"
 
   return (
     <div className="container py-5">
       <h2 className="text-center">DEPARTMENT</h2>
       <p className="text-center">Our department & special service</p>
 
-      <div className="row  g-3 py-5">
+      <div className="row  g-5 py-5 align-items-center ">
         <div className="col-md-4">
           <div className="row g-3">
             {department.map((showDepartment) => {
               return (
                 <>
-                  <div
+                  <div 
                     onClick={(e) => handleClick(showDepartment)}
                     className="col-md-6  text-center "
                   >
-                    <img className="image-background" src={showDepartment.image} alt="" />
+                    <img style={{border: showPortalName ==='Liver' ? "1px solid black":"none"}} className="image-background" src={showDepartment.image} alt="" />
                     <h2 className="text-size pt-3">{showDepartment.name}</h2>
                   </div>
                 </>
@@ -41,14 +45,14 @@ const DepartmentSection = () => {
             })}
           </div>
         </div>
-        <div className="col-md-4">
+        <div className="col-md-3 portalImage? ">
       
         <img className="w-100" src={portalImage} alt="" />
 
         </div>
-        <div className="col-md-4">
-        <h2>{showPortalName}</h2>
-          <p>
+        <div className="col-md-5">
+        <h2 className="section-title pb-3">{showPortalName}</h2>
+          <p className="section-description">
             There are many variations of passages of Lorem Ipsum available, but
             the majority have suffered alteration in some form, by injected
             humour, or randomised words which don't look even slightly
@@ -59,12 +63,12 @@ const DepartmentSection = () => {
             generator on the Internet.
           </p>
 
-          <div className="d-flex justify-content-between">
+          <div className="d-flex justify-content-around   pt-5">
             <div>
-              <button>MAKE APPOINTMENT</button>
+              <button className="appointment-button">MAKE APPOINTMENT</button>
             </div>
             <div>
-              <button>ALL DEPARTMENT</button>
+              <button className="department-button">ALL DEPARTMENT</button>
             </div>
           </div>
         </div>
