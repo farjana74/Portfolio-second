@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
+import "./DepartmentSection.css";
 
 const DepartmentSection = () => {
   const [department, setDepartment] = useState([]);
   const [showPortalName, setShowPortalName] = useState("liver")
-  const  [portalImage, setPortalImage] = useState('https://i.ibb.co/ZYWR5jc/human-liver-icon-vector-15262578.jpg')
+  const  [portalImage, setPortalImage] = useState('https://i.ibb.co/stg2w9g/36-367347-organ-drawing-human-model-liver-png-removebg-preview.png')
   console.log(showPortalName)
 
   useEffect(() => {
@@ -22,18 +23,18 @@ const DepartmentSection = () => {
       <h2 className="text-center">DEPARTMENT</h2>
       <p className="text-center">Our department & special service</p>
 
-      <div className="row">
+      <div className="row  g-3 py-5">
         <div className="col-md-4">
-          <div className="row">
+          <div className="row g-3">
             {department.map((showDepartment) => {
               return (
                 <>
                   <div
                     onClick={(e) => handleClick(showDepartment)}
-                    className="col-md-6 border"
+                    className="col-md-6  text-center "
                   >
-                    <img className="w-100" src={showDepartment.image} alt="" />
-                    <h2>{showDepartment.name}</h2>
+                    <img className="image-background" src={showDepartment.image} alt="" />
+                    <h2 className="text-size pt-3">{showDepartment.name}</h2>
                   </div>
                 </>
               );
@@ -41,12 +42,12 @@ const DepartmentSection = () => {
           </div>
         </div>
         <div className="col-md-4">
-        <h2>{showPortalName}</h2>
+      
         <img className="w-100" src={portalImage} alt="" />
 
         </div>
         <div className="col-md-4">
-          <h4>Heart disease</h4>
+        <h2>{showPortalName}</h2>
           <p>
             There are many variations of passages of Lorem Ipsum available, but
             the majority have suffered alteration in some form, by injected
