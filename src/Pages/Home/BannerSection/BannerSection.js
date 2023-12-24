@@ -6,7 +6,7 @@ import slide3 from "../../../images/slider-3.jpg";
 
 const BannerSection = () => {
     return (
-        <div>
+        <div className='pb-5'>
         <Carousel data-bs-theme="dark">
       <Carousel.Item>
         <img

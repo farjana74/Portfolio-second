@@ -2,6 +2,16 @@
     width: 60%;
     height: 50%;
     cursor: pointer;
+    padding-top:10px;
+}
+.div-background{
+    border:none;
+}
+.div-background:hover{
+    border:2px solid black;
+    opacity: .5;
+   
+    
 }
 .text-size{
     font-size: 18px;
@@ -33,6 +43,8 @@
     font-size: 14px;
     padding : 10px 20px !important;
 
-   
-
 }
+
+/* http://newhospitalhtml.bdtask.com/images/blog_1.jpg
+http://newhospitalhtml.bdtask.com/images/blog_2.jpg
+http://newhospitalhtml.bdtask.com/images/blog_3.jpg */

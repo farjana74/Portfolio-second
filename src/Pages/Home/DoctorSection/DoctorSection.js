@@ -7,7 +7,7 @@ import "./DoctorSection.css";
 
 const DoctorSection = () => {
   return (
-    <div className="container pt-5">
+    <div className="container py-5">
       <h1 className="bold text-center">OUR DOCTOR</h1>
       <p className="text-center">Our department & special service</p>
       <div className="row pt-5">

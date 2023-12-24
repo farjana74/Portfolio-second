@@ -3,7 +3,7 @@ import { TbDirectionSignFilled } from "react-icons/tb";
 import "./ServiceList.css";
 const ServiceList = () => {
   return (
-    <div className="container pt-5">
+    <div className="container py-5">
       <div className="row">
         <div className="col-md-4 service-background p-4">
           <h2 className="first-header text-white pb-3">Our Service List</h2>

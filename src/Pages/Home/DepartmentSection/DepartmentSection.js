@@ -7,7 +7,12 @@ const DepartmentSection = () => {
   const [portalImage, setPortalImage] = useState(
     "https://i.ibb.co/stg2w9g/36-367347-organ-drawing-human-model-liver-png-removebg-preview.png"
   );
-  const [select, setSelected] = useState("select");
+
+  const handleClick = (data) => {
+    setShowPortalName(data.name);
+    setPortalImage(data.image);
+    // setSelected(!selected);
+  };
 
   useEffect(() => {
     fetch("/data.json")
@@ -15,11 +20,6 @@ const DepartmentSection = () => {
       .then((data) => setDepartment(data));
   }, []);
 
-  const handleClick = (data) => {
-    setShowPortalName(data.name);
-    setPortalImage(data.image);
-    setSelected(select);
-  };
   // let borderStyle = showPortalName ==='Liver' ? "1px solid black":"none"
 
   return (
@@ -29,21 +29,16 @@ const DepartmentSection = () => {
 
       <div className="row  g-5 py-5 align-items-center ">
         <div className="col-md-4">
-          <div className="row g-3">
-            {department.map((showDepartment) => {
+          <div className="row g-5 g-lg-3">
+            {department.map((showDepartment, index) => {
               return (
                 <>
                   <div
                     onClick={(e) => handleClick(showDepartment)}
-                    className="col-md-6  text-center "
+                    className="col-md-6  text-center align-items-center div-background  "
                   >
                     <img
-                      style={{
-                        border:
-                          showPortalName === "Liver"
-                            ? "1px solid black"
-                            : "none",
-                      }}
+                      //  style={{border: portalImage ==='Liver'  ?"1px solid red":"none"}}
                       className="image-background"
                       src={showDepartment.image}
                       alt=""

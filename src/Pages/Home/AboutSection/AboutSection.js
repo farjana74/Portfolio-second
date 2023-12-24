@@ -4,7 +4,7 @@ import "./AboutSection.css";
 
 const AboutSection = () => {
   return (
-    <div class=" #about container overflow-hidden pt-5">
+    <div class=" #about container overflow-hidden py-5">
       <div class="row gy-5 justify-content-between  ">
         <div class="col-md-6 ">
           <div class="p-3  ">

@@ -6,6 +6,7 @@ import AboutSection from "./Pages/Home/AboutSection/AboutSection";
 import ServiceList from "./Pages/Home/BannerSection/ServiceList/ServiceList";
 import DoctorSection from "./Pages/Home/DoctorSection/DoctorSection";
 import DepartmentSection from "./Pages/Home/DepartmentSection/DepartmentSection";
+import LatestNews from "./Pages/Home/LatestNews/LatestNews";
 
 function App() {
   return (
@@ -14,12 +15,12 @@ function App() {
       <BannerSection />
       <AboutSection />
       <ServiceList />
-      <br />
-      <br />
+     
       <DoctorSection />
-      <br />
-      <br />
+     
       <DepartmentSection/>
+      
+      <LatestNews/>
     </div>
   );
 }

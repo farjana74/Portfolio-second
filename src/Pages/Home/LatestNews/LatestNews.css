@@ -1,0 +1,27 @@
+.data-bg{
+    background-color: #3b94ed;
+    color:white;
+}
+.small-date-bg{
+    background-color: black;
+    color:white;
+}
+.news-size{
+    font-size: 18px;
+    font-weight: bold;
+}
+.news-description{
+    font-size: 14px;
+}
+.news-button{
+    background: #207fdd;
+    border-radius: 30px;
+    display: inline-block;
+    color: #fff;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 12px 30px;
+    border: 2px solid transparent;
+    transition: all .3s ease;
+}
