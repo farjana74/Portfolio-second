@@ -96,13 +96,52 @@ const ChoseUs = () => {
             />
           </div>
           <div className="col-md-4">
-            <div className="d-flex  align-content-center">
-              <div>
-                <BsTelephoneInbound className="icon-bg" />
+            <div className="d-flex pb-5  align-content-center justify-content-between">
+              <div className=" p-3">
+                <BsTelephoneInbound className="icon-bg " />
               </div>
-              <div>
+              <div className="">
                 <h5>Health Information</h5>
-                <p>
+                <p className="chosen-description">
+                  Contrary to popular belief, Lorem Ipsum is not simply random
+                  text. It has roots in a piece of classical Latin literature
+                  from 45 BC.
+                </p>
+              </div>
+            </div>
+            <div className="d-flex pb-5  align-content-center justify-content-between">
+              <div className=" p-3">
+                <LuMicroscope className="icon-bg " />
+              </div>
+              <div className="">
+                <h5>Health Information</h5>
+                <p className="chosen-description">
+                  Contrary to popular belief, Lorem Ipsum is not simply random
+                  text. It has roots in a piece of classical Latin literature
+                  from 45 BC.
+                </p>
+              </div>
+            </div>
+            <div className="d-flex pb-5  align-content-center justify-content-between">
+              <div className=" p-3">
+                <FaUserDoctor className="icon-bg " />
+              </div>
+              <div className="">
+                <h5>Health Information</h5>
+                <p className="chosen-description">
+                  Contrary to popular belief, Lorem Ipsum is not simply random
+                  text. It has roots in a piece of classical Latin literature
+                  from 45 BC.
+                </p>
+              </div>
+            </div>
+            <div className="d-flex pb-5 align-content-center justify-content-between">
+              <div className=" p-3">
+                <LiaAsymmetrik className="icon-bg " />
+              </div>
+              <div className="">
+                <h5>Health Information</h5>
+                <p className="chosen-description">
                   Contrary to popular belief, Lorem Ipsum is not simply random
                   text. It has roots in a piece of classical Latin literature
                   from 45 BC.
