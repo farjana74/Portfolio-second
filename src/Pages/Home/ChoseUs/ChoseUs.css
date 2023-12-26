@@ -1,0 +1,40 @@
+.chosen-bg{
+    background: url("http://newhospitalhtml.bdtask.com/images/appointment-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    isolation: isolate;
+   
+}
+.chosen-bg::after{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    background: white;
+    opacity: .9;
+}
+.form-bg{
+    border-radius: 30px;
+    box-shadow: none;
+    border: 1px solid #ddd;
+    padding: 6px 12px;
+    width: 100%;
+   
+}
+.form-background{
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+}
+.icon-bg{
+    font-size: 50px;
+    color: #a7b5f6;
+}
+.button-form{
+    padding: 10px 25px;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: 400;
+}
