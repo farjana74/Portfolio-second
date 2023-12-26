@@ -8,24 +8,21 @@ import DoctorSection from "./Pages/Home/DoctorSection/DoctorSection";
 import DepartmentSection from "./Pages/Home/DepartmentSection/DepartmentSection";
 import LatestNews from "./Pages/Home/LatestNews/LatestNews";
 import ChoseUs from "./Pages/Home/ChoseUs/ChoseUs";
+import FooterFirst from "./Pages/Footer/FooterFirst/FooterFirst";
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
       <Navigation />
       <BannerSection />
       <AboutSection />
-      <ChoseUs/>
+      <ChoseUs />
       <ServiceList />
-
       <DoctorSection />
-
       <DepartmentSection />
-
       <LatestNews />
+      <FooterFirst/>
     </div>
   );
 }
-// http://newhospitalhtml.bdtask.com/images/appointment-bg.jpg
-
 export default App;
