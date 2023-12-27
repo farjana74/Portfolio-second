@@ -1,0 +1,16 @@
+.testimonial-bg{
+    background-image: url("http://newhospitalhtml.bdtask.com/images/testi-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    isolation: isolate;
+}
+.testimonial-bg::after{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    background: white;
+    opacity: .9;
+}

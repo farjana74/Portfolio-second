@@ -9,6 +9,8 @@ import DepartmentSection from "./Pages/Home/DepartmentSection/DepartmentSection"
 import LatestNews from "./Pages/Home/LatestNews/LatestNews";
 import ChoseUs from "./Pages/Home/ChoseUs/ChoseUs";
 import FooterFirst from "./Pages/Footer/FooterFirst/FooterFirst";
+import FooterSecond from "./Pages/Footer/FooterSecond/FooterSecond";
+import Testimonial from "./Pages/Home/Testimonial/Testimonial";
 
 function App() {
   return (
@@ -20,8 +22,10 @@ function App() {
       <ServiceList />
       <DoctorSection />
       <DepartmentSection />
+      <Testimonial/>
       <LatestNews />
       <FooterFirst/>
+      <FooterSecond/>
     </div>
   );
 }

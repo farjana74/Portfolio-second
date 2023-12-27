@@ -18,14 +18,14 @@ const FooterFirst = () => {
           </div>
         </div>
         <div className="row d-flex justify-content-between py-5">
-          <div className="col-md-3">
-            <img src={footerLogo} alt="" />
+          <div className="col-md-3  p-3">
+            <img className="footer-logo" src={footerLogo} alt="" />
             <p className="py-2">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the.
             </p>
           </div>
-          <div className="col-md-3">
+          <div className="col-md-3  p-3">
             <h2 className="pb-3">Latest News</h2>
             <div className="d-flex justify-content-around align-items-center pb-3">
               <div>
@@ -55,7 +55,7 @@ const FooterFirst = () => {
               </div>
             </div>
           </div>
-          <div className="col-md-3">
+          <div className="col-md-3  p-3">
             <h2 className="pb-3">Latest Tweet</h2>
             <div className="pb-5">
               <p>
@@ -72,7 +72,7 @@ const FooterFirst = () => {
               <span>7 minutes ago</span>
             </div>
           </div>
-          <div className="col-md-3">
+          <div className="col-md-3  p-3">
             <h2 className="pb-3">Map</h2>
             <div className="map-bg p-3">
               <h2 className="text-center">Oops! Something went wrong.</h2>
